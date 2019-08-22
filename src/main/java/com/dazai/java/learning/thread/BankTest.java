@@ -28,9 +28,7 @@ public class BankTest {
         LockBank bank = new LockBank(NACCOUNTS, INITIAL_BALANCE);
 
         for (int i = 0; i < NACCOUNTS; i++) {
-
             int fromAccount = i;
-
             Runnable r = () -> {
 
                 try {
