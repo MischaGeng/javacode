@@ -21,7 +21,7 @@ public class ThreadTest4
 
         Thread t1 = new TheThread(example);
 
-        example = new Example();
+//        example = new Example();
 
         Thread t2 = new TheThread2(example);
 
@@ -32,7 +32,7 @@ public class ThreadTest4
 
 class Example
 {
-    public synchronized static void execute()
+    public static synchronized void execute()
     {
 
         for(int i = 0; i < 20; i++)
@@ -50,7 +50,7 @@ class Example
         }
     }
 
-    public synchronized void execute2()
+    public void execute2()
     {
         for(int i = 0; i < 20; i++)
         {

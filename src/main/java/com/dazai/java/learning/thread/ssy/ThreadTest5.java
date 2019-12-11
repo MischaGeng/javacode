@@ -36,7 +36,7 @@ class Example2
 
     public void execute()
     {
-        synchronized (this)
+        synchronized (Example2.class)
         {
             for (int i = 0; i < 20; i++)
             {
@@ -57,7 +57,7 @@ class Example2
 
     public void execute2()
     {
-        synchronized(this)
+        synchronized(Example2.class)
         {
             for (int i = 0; i < 20; i++)
             {

@@ -34,7 +34,7 @@ class HelloThread implements Runnable
 {
     int i;
 
-    @Override
+
     public void run()
     {
 //        int i = 0;

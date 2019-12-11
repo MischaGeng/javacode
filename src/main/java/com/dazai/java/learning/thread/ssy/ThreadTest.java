@@ -18,7 +18,7 @@ public class ThreadTest {
     public static void main(String[] args)
     {
         Thread t1 = new Thread1("first thread");
-        Thread t2 = new Thread2("second thread");
+        Thread t2 = new Thread1("second thread");
 
 //        System.out.println(t1.getName());
 //        System.out.println(t2.getName());
