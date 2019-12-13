@@ -29,22 +29,22 @@ public class BankTest {
 
         for (int i = 0; i < NACCOUNTS; i++) {
             int fromAccount = i;
-            Runnable r = () -> {
+//            Runnable r = () -> {
+//
+//                try {
+//                    while (true) {
+//                        int toAccount = (int) (bank.size() * Math.random());
+//                        double amount = MAX_AMOUNT * Math.random();
+//                        bank.transfer(fromAccount, toAccount, amount);
+//                        Thread.sleep((int) (DELAY * Math.random()));
+//                    }
+//                } catch (InterruptedException e) {
+//
+//                }
+//            };
 
-                try {
-                    while (true) {
-                        int toAccount = (int) (bank.size() * Math.random());
-                        double amount = MAX_AMOUNT * Math.random();
-                        bank.transfer(fromAccount, toAccount, amount);
-                        Thread.sleep((int) (DELAY * Math.random()));
-                    }
-                } catch (InterruptedException e) {
-
-                }
-            };
-
-            Thread t = new Thread(r);
-            t.start();
+//            Thread t = new Thread(r);
+//            t.start();
         }
 
     }
