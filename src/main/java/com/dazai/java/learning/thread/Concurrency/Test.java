@@ -1,4 +1,4 @@
-package com.dazai.java.learning.Concurrency;
+package com.dazai.java.learning.thread.Concurrency;
 
 /*
  * @Description:
