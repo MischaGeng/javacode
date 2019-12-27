@@ -31,6 +31,8 @@ public class Allocator {
     }
 
     public synchronized boolean apply(Account src, Account target) {
+
+
         if(list.contains(src) || list.contains(target)){
             return false;
         }
@@ -42,10 +44,8 @@ public class Allocator {
     }
 
     public synchronized void release(Account src, Account target) {
-
         list.remove(src);
         list.remove(target);
-
     }
 
 

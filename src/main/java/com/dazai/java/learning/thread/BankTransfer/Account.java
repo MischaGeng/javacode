@@ -36,6 +36,9 @@ public class Account {
                         this.balance -= number;
                         target.balance += number;
                     }
+                    System.out.println(this.balance);
+                    System.out.println(target.balance);
+                    System.out.println("------------------");
                 }
             }
 
@@ -44,11 +47,10 @@ public class Account {
             notifyAll();
         }
 
-
     }
 
-    public synchronized int getBalance () {
-        return balance;
+    public int getBalance() {
+        return this.balance;
     }
 
 }
